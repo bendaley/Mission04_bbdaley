@@ -21,6 +21,10 @@ namespace Mission04_bbdaley
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            app.UseDefaultFiles();
+            app.UseStaticFiles();
+
+            /* commenting out the stuff like Spencer does
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -35,6 +39,7 @@ namespace Mission04_bbdaley
                     await context.Response.WriteAsync("Hello World!");
                 });
             });
+            */
         }
     }
 }
