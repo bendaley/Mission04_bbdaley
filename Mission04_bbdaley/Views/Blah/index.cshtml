@@ -1,9 +1,15 @@
-﻿<!-- 
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<!--
     Author - Ben Daley
     Class - IS 413
-    Date - 30 Jan 2023
-    Assignment - Mission 4
-    Description - This app creates a basic website with personal info, a photo, and a grade calculator
+    Date - 06 Feb 2023
+    Assignment - Mission 5
+    Description - This app creates a basic website with personal info, a photo, and a grade calculator using MVC format
     -->
 
 <!DOCTYPE html>
@@ -12,16 +18,16 @@
     <!-- link bootstrap & css files, display icon & webpage title -->
     <meta charset="utf-8" />
     <title>Ben Daley</title>
-    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="css/default.css" rel="stylesheet" />
-    <link rel="shortcut icon" type="image/png" href="img/icon.png" sizes="32x32" />
+    <link href="~/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/default.css" rel="stylesheet" />
+    <link rel="shortcut icon" type="image/png" href="~/img/icon.png" sizes="32x32" />
     <!--<link rel="shortcut icon" type="image/png" href="~/img/icon.png" sizes="32x32" />-->
 
 </head>
 <body>
     <!-- header w/ my name & picture of what I enjoy doing -->
     <h1>Ben Daley</h1>
-    <img src="img/football.jpg" width="200" />
+    <img src="~/img/football.jpg" width="200" />
 
     <!-- paragraph on what I hope to get out of the class -->
     <h5>What I hope to get out of IS 413</h5>
@@ -37,7 +43,7 @@
     <h5>Top 3 Jobs I'm most interested in pursuing</h5>
     <ol>
         <li>Product Manager</li>
-        <li>Data Analyst</li> 
+        <li>Data Analyst</li>
         <li>Software Engineer</li>
     </ol>
 
@@ -59,14 +65,11 @@
         <button id="btn" type="button">Submit</button><br /><br />
         <span id="results"></span>
 
-
-
-
     </form>
 
     <!-- link javascript files & libraries -->
-    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
-    <script src="lib/jquery/jquery-3.6.3.min.js"></script>
-    <script src="js/basic.js"></script>
- </body>
+    <script src="~/lib/jquery/jquery-3.6.3.min.js"></script>
+    <script src="~/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="~/js/basic.js"></script>
+</body>
 </html>
