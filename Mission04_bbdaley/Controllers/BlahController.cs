@@ -10,6 +10,20 @@ namespace Mission04_bbdaley.Controllers
     {
         public IActionResult Index()
         {
+            // throw new IndexOutOfRangeException();
+            
+            return View();
+        }
+
+        [HttpGet]
+        public IActionResult Grade()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Grade(object model)
+        {
             return View();
         }
     }

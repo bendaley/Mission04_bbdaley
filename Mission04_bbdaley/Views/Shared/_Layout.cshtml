@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <!-- link bootstrap & css files, display icon & webpage title -->
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"]</title>
+    <link href="~/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/default.css" rel="stylesheet" />
+    <link rel="shortcut icon" type="image/png" href="~/img/icon.png" sizes="32x32" />
+    <!--<link rel="shortcut icon" type="image/png" href="~/img/icon.png" sizes="32x32" />-->
+</head>
+<body>
+
+    <div>
+        @RenderBody()
+    </div>
+
+    <script src="~/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="~/lib/jquery/jquery-3.6.3.min.js"></script>
+</body>
+</html>

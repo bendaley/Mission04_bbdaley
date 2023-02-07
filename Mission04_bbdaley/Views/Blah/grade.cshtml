@@ -1,0 +1,33 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<nav>
+    <a asp-controller="Blah" asp-action="Index">Home</a>
+    <a asp-controller="Blah" asp-action="Grade">Grade Calculator</a>
+</nav>
+
+<!-- grade calculator that calculates weighted grade based on user categorical inputs -->
+<h5>Grade Calculator - Enter a Percent (1-100) for Each Category</h5>
+<form method="post">
+    <label>Assignments - 50%</label>
+    <input type="number" id="assignment" min="0" max="100" /><br /><br />
+    <label>Group Project - 10%</label>
+    <input type="number" id="group" min="0" max="100" /><br /><br />
+    <label>Quizzes - 10%</label>
+    <input type="number" id="quizzes" min="0" max="100" /><br /><br />
+    <label>Midterm Exam - 10%</label>
+    <input type="number" id="midterm" min="0" max="100" /><br /><br />
+    <label>Final Exam - 10%</label>
+    <input type="number" id="final" min="0" max="100" /><br /><br />
+    <label>INTEX - 10%</label>
+    <input type="number" id="intex" min="0" max="100" /><br /><br />
+    <button id="btn" type="submit">Submit</button><br /><br />
+    <span id="results"></span>
+
+</form>
+
+<!-- link javascript files & libraries -->
+<script src="~/js/basic.js"></script>

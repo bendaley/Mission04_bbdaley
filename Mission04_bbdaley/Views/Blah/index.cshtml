@@ -2,6 +2,8 @@
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
+    ViewData["Title"] = "Ben Daley";
+    ViewData["Title2Pues"] = "Title2";
 }
 
 <!--
@@ -12,64 +14,31 @@
     Description - This app creates a basic website with personal info, a photo, and a grade calculator using MVC format
     -->
 
-<!DOCTYPE html>
-<html>
-<head>
-    <!-- link bootstrap & css files, display icon & webpage title -->
-    <meta charset="utf-8" />
-    <title>Ben Daley</title>
-    <link href="~/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="~/css/default.css" rel="stylesheet" />
-    <link rel="shortcut icon" type="image/png" href="~/img/icon.png" sizes="32x32" />
-    <!--<link rel="shortcut icon" type="image/png" href="~/img/icon.png" sizes="32x32" />-->
+<nav>
+    <a asp-controller="Blah" asp-action="Index">Home</a>
+    <a asp-controller="Blah" asp-action="Grade">Grade Calculator</a>
+</nav>
 
-</head>
-<body>
-    <!-- header w/ my name & picture of what I enjoy doing -->
-    <h1>Ben Daley</h1>
-    <img src="~/img/football.jpg" width="200" />
+<!-- header w/ my name & picture of what I enjoy doing -->
+<h1>Ben Daley</h1>
+<img src="~/img/football.jpg" width="200" />
 
-    <!-- paragraph on what I hope to get out of the class -->
-    <h5>What I hope to get out of IS 413</h5>
-    <p>
-        The main thing I am looking forward to in this course is becoming familiar with a strongly-typed language. I have become very
-        accustomed to languages that are not as strict on variable types, code format, etc., so I'm excited to get to the point where
-        I feel comfortable writing in a variety of languages. It's been cool to see how the basics & the logic are the same, it's simply
-        the syntax that needs some adjusting. I'm also looking to becoming more familiar with git & the flexibility it provides while
-        working in groups!
-    </p><br />
+<!-- paragraph on what I hope to get out of the class -->
+<h5>What I hope to get out of IS 413</h5>
+<p>
+    The main thing I am looking forward to in this course is becoming familiar with a strongly-typed language. I have become very
+    accustomed to languages that are not as strict on variable types, code format, etc., so I'm excited to get to the point where
+    I feel comfortable writing in a variety of languages. It's been cool to see how the basics & the logic are the same, it's simply
+    the syntax that needs some adjusting. I'm also looking to becoming more familiar with git & the flexibility it provides while
+    working in groups!
+</p><br />
 
-    <!-- list of jobs I'm interested in after graduation -->
-    <h5>Top 3 Jobs I'm most interested in pursuing</h5>
-    <ol>
-        <li>Product Manager</li>
-        <li>Data Analyst</li>
-        <li>Software Engineer</li>
-    </ol>
+<!-- list of jobs I'm interested in after graduation -->
+<h5>Top 3 Jobs I'm most interested in pursuing</h5>
+<ol>
+    <li>Product Manager</li>
+    <li>Data Analyst</li>
+    <li>Software Engineer</li>
+</ol>
 
-    <!-- grade calculator that calculates weighted grade based on user categorical inputs -->
-    <h5>Grade Calculator - Enter a Percent (1-100) for Each Category</h5>
-    <form>
-        <label>Assignments - 50%</label>
-        <input type="number" id="assignment" min="0" max="100" /><br /><br />
-        <label>Group Project - 10%</label>
-        <input type="number" id="group" min="0" max="100" /><br /><br />
-        <label>Quizzes - 10%</label>
-        <input type="number" id="quizzes" min="0" max="100" /><br /><br />
-        <label>Midterm Exam - 10%</label>
-        <input type="number" id="midterm" min="0" max="100" /><br /><br />
-        <label>Final Exam - 10%</label>
-        <input type="number" id="final" min="0" max="100" /><br /><br />
-        <label>INTEX - 10%</label>
-        <input type="number" id="intex" min="0" max="100" /><br /><br />
-        <button id="btn" type="button">Submit</button><br /><br />
-        <span id="results"></span>
 
-    </form>
-
-    <!-- link javascript files & libraries -->
-    <script src="~/lib/jquery/jquery-3.6.3.min.js"></script>
-    <script src="~/lib/bootstrap/js/bootstrap.min.js"></script>
-    <script src="~/js/basic.js"></script>
-</body>
-</html>

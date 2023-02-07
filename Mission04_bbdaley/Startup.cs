@@ -22,7 +22,11 @@ namespace Mission04_bbdaley
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            // app.UseDefaultFiles();
+            if (env.IsEnvironment("Development"))
+            {
+                app.UseDeveloperExceptionPage();
+            }
+
             app.UseStaticFiles();
 
             app.UseRouting();
@@ -31,27 +35,9 @@ namespace Mission04_bbdaley
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller-Blah}/{action-Index}/{id?}"
+                    pattern: "{controller=Blah}/{action=Index}/{id?}"
                 );
             });
-
-
-            /* commenting out the stuff like Spencer does
-            if (env.IsDevelopment())
-            {
-                app.UseDeveloperExceptionPage();
-            }
-
-            app.UseRouting();
-
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapGet("/", async context =>
-                {
-                    await context.Response.WriteAsync("Hello World!");
-                });
-            });
-            */
         }
     }
 }
