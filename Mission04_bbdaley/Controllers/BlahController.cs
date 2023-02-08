@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Mission04_bbdaley.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,7 +23,7 @@ namespace Mission04_bbdaley.Controllers
         }
 
         [HttpPost]
-        public IActionResult Grade(object model)
+        public IActionResult Grade(GradeModel model)
         {
             return View();
         }
