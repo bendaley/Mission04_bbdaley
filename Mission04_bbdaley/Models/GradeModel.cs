@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Mission04_bbdaley.Models
 {
+// creating the model and specifying that all fields are in the 0-100 range & are required
     public class GradeModel
     {
         [Required]

@@ -9,6 +9,7 @@ namespace Mission04_bbdaley.Controllers
 {
     public class BlahController : Controller
     {
+        // index action
         public IActionResult Index()
         {
             // throw new IndexOutOfRangeException();
@@ -16,12 +17,14 @@ namespace Mission04_bbdaley.Controllers
             return View();
         }
 
+        // grade get action
         [HttpGet]
         public IActionResult Grade()
         {
             return View();
         }
 
+        // grade post action
         [HttpPost]
         public IActionResult Grade(GradeModel model)
         {
